@@ -1,0 +1,7 @@
+function gm() {
+     git commit -am "$1"
+}
+
+function gam() {
+    git add -A :/ && git commit -m "$1"
+}

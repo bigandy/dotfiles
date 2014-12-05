@@ -1,46 +1,20 @@
-# Aliases
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
-alias proj="cd ~/Desktop/Electric-Studio-Projects"
-alias desk="cd ~/Desktop"
-alias down="cd ~/Desktop/downloads"
-alias sites="cd /Applications/XAMPP/htdocs"
-alias restart="sudo apachectl restart"
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob;
 
-alias ..="cd .."
-alias ...="cd ../../"
-alias ....="cd ../../../"
+# Append to the Bash history file, rather than overwriting it
+shopt -s histappend;
 
-### Git
-alias gs="git status"
-alias gd="git diff"
-alias gl="git log --graph --full-history --all --color"
-alias ga="git add -A"
-alias gb="git branch"
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell;
 
-function gm() {
-     git commit -am "$1"
-}
-
-function gam() {
-    git add -A :/ && git commit -m "$1"
-}
-
-alias gpom="git push origin master"
-alias gpuom="git pull origin master"
-alias gpov="git push origin v4"
-alias gpos="git push origin staging"
-alias gpol="git push origin live"
-alias gpuol="git pull origin live"
-
-alias gcm="git checkout master"
-alias gcs="git checkout staging"
-alias gcl="git checkout live"
-
-alias bp="sudo vim ~/.bash_profile"
-alias sbp="source ~/.bash_profile"
-
-alias do="ssh root@178.62.25.107"
-alias ls="ls -laF"
 
 set -o vi
 # Sexy Bash Prompt, inspired by "Extravagant Zsh Prompt"
@@ -87,22 +61,5 @@ parse_git_branch () {
 
 PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
 
-# export PS1="\w: "
 
-export PATH=/usr/local/bin:$PATH
-export PATH=/usr/bin/gem:$PATH
-export PATH=~/.composer/vendor/bin/:$PATH
 
-# Aliases imported through newSite.sh script
-alias ba="sites && cd big-andy.co.uk/content/themes/v4"
-alias bag="ba && gulp"
-alias boi="sites && cd source/boilerplate"
-alias re="sites && cd radius-equity/wp-content/themes/radius-equity"
-alias reg="re && grunt"
-alias tele="sites && cd teleflex/wp-content/themes/teleflex"
-alias teleg="tele && grunt"
-alias ox="sites && cd oxword2/wp-content/themes/oxwords-theme"
-alias oxg="ox && grunt"
-alias op="sites && cd optek/wp-content/themes/Optek"
-alias mt="sites && cd mtcqs/wp-content/themes/mtcqs"
-alias mtg="mt && gulp"
