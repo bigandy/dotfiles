@@ -1,0 +1,37 @@
+{
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"detect_slow_plugins": true,
+	"disable_colored_group_labels": true,
+	"disable_coloured_folder_labels": true,
+	"disable_formatted_linebreak": true,
+	"fade_fold_buttons": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"tmp",
+		".bundle",
+		".sass-cache"
+	],
+	"font_face": "Source Code Pro",
+	"font_size": 15.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage",
+		".DS_Store"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"save_on_focus_lost": true,
+	"translate_tabs_to_spaces": false,
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
+	"word_wrap": true
+}
