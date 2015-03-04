@@ -1,9 +1,10 @@
 # Aliases
 
-alias proj="cd ~/Desktop/Electric-Studio-Projects"
+# Aliases
+
 alias desk="cd ~/Desktop"
 alias down="cd ~/Desktop/downloads"
-alias sites="cd /Applications/XAMPP/htdocs"
+alias sites="cd /Users/andrew/Sites"
 alias restart="sudo apachectl restart"
 
 alias ..="cd .."
@@ -19,7 +20,8 @@ alias gb="git branch"
 
 alias gpom="git push origin master"
 alias gpuom="git pull origin master"
-alias gpov="git push origin v4"
+alias gpov="git push origin v5"
+alias gpuov="git pull origin v5"
 alias gpos="git push origin staging"
 alias gpol="git push origin live"
 alias gpuol="git pull origin live"
@@ -34,7 +36,8 @@ alias sbp="source ~/.bash_profile"
 alias ls="ls -laF"
 
 # Aliases imported through newSite.sh script
-alias ba="sites && cd big-andy.co.uk/content/themes/v4"
+alias ba="sites && cd big-andy.co.uk/content/themes/v5"
+alias bawp="sites && cd big-andy.co.uk/wp && git pull origin master"
 alias bag="ba && gulp"
 alias boi="sites && cd source/boilerplate"
 alias re="sites && cd radius-equity/wp-content/themes/radius-equity"
