@@ -5,3 +5,16 @@ function gm() {
 function gam() {
     git add -A :/ && git commit -m "$1"
 }
+
+function take() {
+	mkdir $1 && cd $1
+}
+
+pass() {
+	if [ -n "$1" ]
+		then
+			pwgen -sy $1 1 |pbcopy |pbpaste; echo " Has been copied to clipboard"
+	else
+		pwgen -sy 40 1 |pbcopy |pbpaste; echo "Has been copied to clipboard"
+	fi
+}
