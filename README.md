@@ -4,7 +4,7 @@ My dotfiles. A work in progress as I figure out the best way to do this and keep
 
 ## Installation
 
-gh repo clone
+git clone https://github.com/bigandy/dotfiles.git ~/.dotfiles
 
 ## Simlinks
 
