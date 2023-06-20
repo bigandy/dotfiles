@@ -1,0 +1,108 @@
+{
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "workbench.startupEditor": "none",
+    "git.confirmSync": false,
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[astro]": {
+      "editor.formatOnSave": false,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // "[njk]": {
+    //   "editor.formatOnSave": false
+    // },
+    "files.associations": {
+      "*.njk": "nunjucks",
+      "*.webc": "html",
+      "*.html": "html",
+      "*.astro": "astro"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "workbench.settings.editor": "json",
+    "css.lint.unknownAtRules": "ignore",
+    "css.lint.unknownProperties": "ignore",
+    "workbench.colorTheme": "Cobalt2",
+  
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 5,
+    "editor.cursorBlinking": "solid",
+    "editor.renderWhitespace": "all",
+    "workbench.colorCustomizations": {
+      "editorUnnecessaryCode.border": "#f00"
+    },
+    "git.ignoreMissingGitWarning": true,
+    "files.autoSave": "onFocusChange",
+    // "files.exclude": {
+    //   ".cache": true,
+    //   ".github": true,
+    //   ".vscode": true,
+    //   ".husky": true,
+    //   "node_modules": true,
+    //   ".editorconfig": true,
+    //   ".eslintrc.cjs": true,
+    //   // ".gitignore": true,
+    //   ".gitpod.yml": true,
+    //   ".prettierignore": true,
+    //   ".eslintignore": true,
+    //   ".netlify": true,
+    //   // "_site": true,
+    //   // "dist": true,
+    //   "**/node_modules": true,
+    //   // "**/.storybook": true,
+    //   "**/.turbo": true,
+    //   // "**/dist": true,
+    //   "**/yarn.lock": true,
+    //   "**/.next/**": true,
+    //   // "__tests__": true,
+    //   ".swc": true,
+    //   ".bundle": true,
+  
+    //   // "*.env*": true,
+    //   "*.nvmrc": true,
+    //   "*.gitignore": true,
+    //   "codegen.yml": true,
+    //   "*.db": true,
+    //   "dist": true,
+    // },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": false
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.sideBar.location": "left",
+    "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "extensions.ignoreRecommendations": true,
+    "emmet.includeLanguages": {
+      "postcss": "css",
+      "nunjucks": "html"
+    },
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[svelte]": {
+      "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "editor.inlineSuggest.enabled": true,
+    "window.zoomLevel": 1,
+    "svelte.enable-ts-plugin": true
+  }
+  
